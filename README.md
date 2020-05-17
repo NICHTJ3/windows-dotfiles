@@ -16,6 +16,7 @@
   - python-pip
     - notedown
   - fnm - for node versioning
+  - base16-shell
   - tpm - tmux plugin manager
   - urlview
 - clone this repo and run ./install
