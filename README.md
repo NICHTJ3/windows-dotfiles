@@ -3,8 +3,9 @@
   - hyper v
   - windows sub system for linux
 - Install ubuntu 20.04 atleast from the windows store
+- Install nerd fonts
 - Install windows terminal
-- Install and set nerd fonts in windows terminal
+- copy the settings.json file contents to the windows terminal settings.json
 - sudo apt update/upgrade in ubuntu subsystem
 - Install programs in ubuntu subsystem
   - neovim
