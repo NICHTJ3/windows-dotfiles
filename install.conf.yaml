@@ -1,0 +1,27 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ["~"]
+
+- clean:
+    ~/:
+        force: true
+    ~/.config:
+        recursive: true
+
+- link:
+    ~/bin: Useful-Scripts
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
+    ~/.zshenv: zshenv
+    ~/.zshrc: zshrc
+    ~/.config/nvim/:
+        glob: true
+        path: nvim/*
+
+- create:
+   - ~/Dev/
+   - ~/.config/nvim/spell/
+   - ~/.config/nvim/undodir/
