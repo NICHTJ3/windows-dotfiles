@@ -58,7 +58,8 @@ Plug 'pgdouyon/vim-evanesco' " Clears search highlighting on move
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                               Must have plugins                              "
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-Plug 'unblevable/quick-scope'
+Plug 'roxma/vim-paste-easy' " Automaticaly set paste
+Plug 'unblevable/quick-scope' " Highlight jumps to words with f
 Plug 'tpope/vim-surround' " Change/Add surrounding character
 Plug 'tomtom/tcomment_vim' " Toggle comments
 Plug 'rhysd/committia.vim' " Better commits
