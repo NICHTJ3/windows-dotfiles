@@ -2,6 +2,7 @@
 #
 # PATH {{{
 [ -d "$HOME/bin" ] && PATH="$HOME/bin:$PATH"
+[ -d "$HOME/.poetry/bin" ] && PATH="$HOME/.poetry/bin:$PATH"
 [ -d "$HOME/.gem/bin" ] && PATH="$HOME/.gem/bin:$PATH"
 [ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
 [ -d "$HOME/.local/share/cargo/bin" ] && PATH="$HOME/.local/share/cargo/bin:$PATH"

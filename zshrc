@@ -8,6 +8,8 @@ esac
 [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]] && \
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 
+fpath+=~/.zfunc
+
 HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh_history"
 
 source "$HOME/bin/antigen.zsh"
