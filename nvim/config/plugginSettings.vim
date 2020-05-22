@@ -31,7 +31,8 @@ let g:airline#extensions#gutentags#enabled = 1
 
 let g:airline#extensions#coc#enabled = 1
 let airline#extensions#coc#error_symbol = '💣:'
-let airline#extensions#coc#warning_symbol = '⚠️ :'
+let airline#extensions#coc#warning_symbol = '⏰ :'
+
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
@@ -62,28 +63,40 @@ let g:NERDTreeDirArrowExpandable=''
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 set hidden
 "                                COC Extensions                                "
-call coc#add_extension(
-      \'coc-sh',
-      \'coc-css',
-      \'coc-word',
-      \'coc-json',
-      \'coc-deno',
-      \'coc-pairs',
-      \'coc-emmet',
-      \'coc-vetur',
-      \'coc-vimlsp',
-      \'coc-xml',
-      \'coc-python',
-      \'coc-eslint',
-      \'coc-clangd',
-      \'coc-svelte',
-      \'coc-angular',
-      \'coc-tsserver',
-      \'coc-snippets',
-      \'coc-prettier',
-      \'coc-marketplace',
-      \'https://github.com/dsznajder/vscode-es7-javascript-react-snippets'
-      \)
+" General
+call coc#add_extension('coc-word')
+call coc#add_extension('coc-pairs')
+call coc#add_extension('coc-emmet')
+call coc#add_extension('coc-snippets')
+call coc#add_extension('coc-marketplace')
+
+" General languages
+call coc#add_extension( 'coc-sh')
+call coc#add_extension('coc-vimlsp')
+call coc#add_extension('coc-clangd')
+
+" Web and api related languages
+call coc#add_extension('coc-xml')
+call coc#add_extension('coc-css')
+call coc#add_extension('coc-json')
+
+" Linting and formatting
+call coc#add_extension('coc-eslint')
+call coc#add_extension('coc-prettier')
+
+" Python
+call coc#add_extension('coc-python')
+call coc#add_extension('coc-pyright')
+
+" Node and deno
+call coc#add_extension('coc-deno') " This may need to be dissabled when using typescript
+call coc#add_extension('coc-tsserver')
+
+" Frameworks
+call coc#add_extension('coc-vetur')
+call coc#add_extension('coc-svelte')
+call coc#add_extension('coc-angular')
+call coc#add_extension('https://github.com/dsznajder/vscode-es7-javascript-react-snippets')
 
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                               Markdown Preview                               "

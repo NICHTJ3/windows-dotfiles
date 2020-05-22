@@ -39,7 +39,7 @@
   },
   "python.workspaceSymbols.tagFilePath": "${workspaceFolder}/tags",
   "python.linting.ignorePatterns": ["*-test.py"],
-  "python.venvPath": "/home/nichtj3/.local/share/virtualenvs/",
+  "python.venvPath": "/home/nichtj3/.cache/pypoetry/virtualenvs/",
   "javascript.validate.enable": false,
   "python.formatting.provider": "black",
   "svelte.plugin.typescript.diagnostics.enable": false,
