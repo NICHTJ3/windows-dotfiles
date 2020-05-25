@@ -68,6 +68,7 @@ Plug 'editorconfig/editorconfig-vim' " Editor config
 Plug 'scrooloose/nerdtree', {'on':'NERDTreeToggle'} " File explorer
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-obsession' " Automaticaly update and make a session file
+Plug 'jiangmiao/auto-pairs'
 
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                                     TMUX                                     "

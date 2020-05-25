@@ -65,7 +65,6 @@ set hidden
 "                                COC Extensions                                "
 " General
 call coc#add_extension('coc-word')
-call coc#add_extension('coc-pairs')
 call coc#add_extension('coc-emmet')
 call coc#add_extension('coc-snippets')
 call coc#add_extension('coc-marketplace')
