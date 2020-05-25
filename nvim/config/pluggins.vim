@@ -69,6 +69,7 @@ Plug 'scrooloose/nerdtree', {'on':'NERDTreeToggle'} " File explorer
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-obsession' " Automaticaly update and make a session file
 Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
 
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                                     TMUX                                     "
