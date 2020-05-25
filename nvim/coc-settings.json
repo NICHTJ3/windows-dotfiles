@@ -47,5 +47,6 @@
   "xml.format.spaceBeforeEmptyCloseTag": true,
   "xml.format.splitAttributes": true,
   "xml.completion.autoCloseTags": true,
-  "xml.validation.enabled": false
+  "xml.validation.enabled": false,
+  "deno.enable": false
 }
