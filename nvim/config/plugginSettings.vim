@@ -116,7 +116,7 @@ let g:vim_jsx_pretty_colorful_config = 1
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                                 VimWiki                                      "
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-let g:vimwiki_list = [{'path': '~/Documents/Dev/Notes',
+let g:vimwiki_list = [{'path': '~/Dev/Notes',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 

@@ -200,10 +200,10 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)<cr>
 nmap <leader>rn <Plug>(coc-rename)
 
 "Coc extras
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gt <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gtd <Plug>(coc-definition)
+nmap <silent> gtt <Plug>(coc-type-definition)
+nmap <silent> gti <Plug>(coc-implementation)
+nmap <silent> gtr <Plug>(coc-references)
 
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                           Git rebase file mappings                           "
