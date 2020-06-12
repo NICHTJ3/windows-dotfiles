@@ -88,7 +88,7 @@ call coc#add_extension('coc-python')
 call coc#add_extension('coc-pyright')
 
 " Node and deno
-call coc#add_extension('coc-deno') " This may need to be dissabled when using typescript
+call coc#add_extension('coc-deno') " Disable or uninstall when using typescript
 call coc#add_extension('coc-tsserver')
 
 " Frameworks
@@ -116,8 +116,11 @@ let g:vim_jsx_pretty_colorful_config = 1
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 "                                 VimWiki                                      "
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-let g:vimwiki_list = [{'path': '~/Dev/Notes',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{
+      \'path': '~/Dev/Notes',
+      \'syntax': 'markdown',
+      \'ext': '.md'
+      \}]
 
 
 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -133,6 +136,6 @@ let g:closetag_filetypes = 'html,xhtml,jsx,javascript'
 
 " Disables auto-close if not in a "valid" region (based on filetype)
 let g:closetag_regions = {
-    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
-    \ 'javascript.jsx': 'jsxRegion',
-    \ }
+      \'typescript.tsx': 'jsxRegion,tsxRegion',
+      \ 'javascript.jsx': 'jsxRegion',
+      \ }
