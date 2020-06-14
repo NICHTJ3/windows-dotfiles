@@ -61,7 +61,7 @@ if has("autocmd")
   " Close Nerdtree if it's the last open window
   autocmd! bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
   " Highlight yanked text
-  autocmd! TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 1000)
+  autocmd! TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 200)
   " Automatically install missing plugins on startup
   autocmd VimEnter *
     \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
