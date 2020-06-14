@@ -46,6 +46,12 @@ if has("autocmd")
     autocmd Filetype ipynb nmap <silent><Leader>j :VimpyterStartJupyter<CR>
   augroup end
 
+  augroup Views
+    autocmd!
+    autocmd BufWinLeave *.md mkview
+    autocmd BufWinEnter *.md silent loadview
+  augroup end
+
   " Color all columns past 81
   autocmd! Filetype * let &l:colorcolumn='+' . join(range(1, 254), ',+')
   " Vimwiki uses markdown syntax
