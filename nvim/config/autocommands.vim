@@ -11,10 +11,12 @@ if has("autocmd")
     autocmd!
     autocmd BufWinEnter *.kotlin set filetype=kotlin
     autocmd BufWinEnter *.vue set syntax=vue
+    autocmd BufWinEnter *.qrc set filetype=xml
     autocmd BufWinEnter config set syntax=i3config
     autocmd BufWinEnter *.pug set syntax=pug
     autocmd BufWinEnter *.cisco set syntax=cisco
     autocmd BufWinEnter *.css set filetype=css
+    autocmd FileType vimwiki set syntax=markdown
   augroup END
 
   augroup Indentation
@@ -46,25 +48,10 @@ if has("autocmd")
     autocmd Filetype ipynb nmap <silent><Leader>j :VimpyterStartJupyter<CR>
   augroup end
 
-  augroup Views
-    autocmd!
-    autocmd BufWinLeave *.md mkview
-    autocmd BufWinEnter *.md silent loadview
-  augroup end
-
   " Color all columns past 81
   autocmd! Filetype * let &l:colorcolumn='+' . join(range(1, 254), ',+')
-  " Vimwiki uses markdown syntax
-  autocmd! FileType vimwiki set syntax=markdown
   " Coc highlight on cursorhold
   autocmd! CursorHold * silent call CocActionAsync('highlight')
-  " Close Nerdtree if it's the last open window
-  autocmd! bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-  " Highlight yanked text
-  autocmd! TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 200)
-  " Automatically install missing plugins on startup
-  autocmd VimEnter *
-    \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-    \|   PlugInstall --sync | q
-    \| endif
+  " Close coc-explorer if it's the last open window
+  autocmd! BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 endif

@@ -39,7 +39,7 @@
   },
   "python.workspaceSymbols.tagFilePath": "${workspaceFolder}/tags",
   "python.linting.ignorePatterns": ["*-test.py"],
-  "python.venvPath": "/home/nichtj3/.cache/pypoetry/virtualenvs/",
+  "python.venvPath": "/home/nichtj3/.local/share/virtualenvs/",
   "javascript.validate.enable": false,
   "python.formatting.provider": "black",
   "svelte.plugin.typescript.diagnostics.enable": false,
@@ -48,5 +48,19 @@
   "xml.format.splitAttributes": true,
   "xml.completion.autoCloseTags": true,
   "xml.validation.enabled": false,
-  "deno.enable": false
+  "explorer.position": "right",
+  "explorer.icon.enableNerdfont": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.width": 30,
+  "explorer.keyMappings": {
+    "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"]
+  },
+  "explorer.presets": {
+    "simplify": {
+      "file-child-template": "[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]"
+    }
+  },
+  "clangd.semanticHighlighting": true,
+  "rust-analyzer.lens.run": false
 }
