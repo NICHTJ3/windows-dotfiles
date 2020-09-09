@@ -19,7 +19,7 @@
     ~/.zshrc: zshrc
     ~/.config/nvim/:
         glob: true
-        path: nvim/*
+        path: neovim/*
 
 - create:
    - ~/Dev/
